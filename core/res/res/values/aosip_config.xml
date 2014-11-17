@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/* //device/apps/common/assets/res/any/strings.xml
+/* Copyright (c) 2013, The Linux Foundation. All rights reserved.
+** Not a Contribution.
 **
-** Copyright (C) 2014, ParanoidAndroid Project
+** Copyright 2012, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,11 +18,13 @@
 ** limitations under the License.
 */
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Setting confirmation dialog strings. Shown when any UI interaction can be modified by user input -->
-    <string name="setting_confirmation_ask_me_later">Ask later</string>
-    <string name="setting_confirmation_yes">Yes</string>
-    <string name="setting_confirmation_no">No</string>
-<!-- Long-press back kill application -->
-    <string name="app_killed_message">Application killed</string>
+<resources>
+  <string-array translatable="false" name="config_rebootActionsList">
+    <item>reboot</item>
+    <item>reboot_recovery</item>
+    <item>reboot_bootloader</item>
+  </string-array>
+  <!-- Timeout in MS for how long you have to long-press the back key to
+         kill the foreground app. -->
+   <integer name="config_backKillTimeout">2000</integer>
 </resources>
