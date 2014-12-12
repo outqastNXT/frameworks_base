@@ -24,4 +24,8 @@
     <string name="setting_confirmation_no">No</string>
 <!-- Long-press back kill application -->
     <string name="app_killed_message">Application killed</string>
+
+    <!-- Heads up -->
+    <string name="permlab_changeHeadsUpState">enable or disable heads up</string>
+    <string name="permdesc_changeHeadsUpState">Allows the application to change whether another application is allowed to show normal notifications as heads up notification.</string>
 </resources>
