@@ -176,8 +176,6 @@ public class BatteryMeterView extends View implements DemoMode,
             mTracker.onReceive(getContext(), sticky);
         }
         mBatteryController.addStateChangedCallback(this);
-       getContext().getContentResolver().registerContentObserver(Settings.System.getUriFor(
-           "status_bar_show_battery_percent"), false, mObserver);
     }
 
     @Override
@@ -411,8 +409,8 @@ public class BatteryMeterView extends View implements DemoMode,
         boolean pctOpaque = false;
         float pctX = 0, pctY = 0;
         String pctText = null;
-        if (!tracker.plugged && level > mCriticalLevel && (mShowPercent
-                && !(tracker.level == 100 && !SHOW_100_PERCENT))) {
+        if (!tracker.plugged && level > mCriticalLevel && mShowPercent
+                && !(tracker.level == 100 && !SHOW_100_PERCENT)) {
             mTextPaint.setColor(getColorForLevel(level));
             mTextPaint.setTextSize(height *
                     (SINGLE_DIGIT_PERCENT ? 0.75f
