@@ -41,8 +41,4 @@
   <java-symbol type="id" name="option4" />
   <java-symbol type="id" name="option5" />
   <java-symbol type="style" name="GlobalActionsAnimation" />
-
-  <!-- Screenrecorder -->
-  <java-symbol type="bool" name="config_enableScreenrecordChord" />
->>>>>>> d37094c... Base:screen recorder [1/2]
 </resources>
