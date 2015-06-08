@@ -2941,11 +2941,6 @@ public final class Settings {
          * @hide
          */
         public static final String RECENTS_CLEAR_ALL_DISMISS_ALL = "recents_clear_all_dismiss_all";
-	/**
-         * Height of navigation bar buttons
-         * @hide
-         */
-        public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
         /**
          * Whether to show/hide status bar native battery percentage
