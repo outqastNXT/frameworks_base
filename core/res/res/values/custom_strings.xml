@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-** Copyright (C) 2014, ParanoidAndroid Project
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -15,13 +17,11 @@
 ** limitations under the License.
 */
 -->
-<resources>
-  <!--Setting confirmation dialog-->
-  <java-symbol type="style" name="Widget.GifView" />
-  <java-symbol type="id" name="setting_confirmation_dialog_visual_hint" />
-  <java-symbol type="id" name="setting_confirmation_dialog_visual_gif" />
-  <java-symbol type="layout" name="setting_confirmation_dialog" />
-  <java-symbol type="string" name="setting_confirmation_ask_me_later" />
-  <java-symbol type="string" name="setting_confirmation_yes" />
-  <java-symbol type="string" name="setting_confirmation_no" />
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Reboot -->
+    <string name="global_action_reboot">Reboot</string>
+    <string name="global_action_reboot_more">Reboot\u2026</string>
+    <string name="global_action_reboot_sub">System</string>
+    <string name="global_action_reboot_recovery">Recovery</string>
+    <string name="global_action_reboot_bootloader">Bootloader</string>
 </resources>
