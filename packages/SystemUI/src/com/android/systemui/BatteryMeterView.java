@@ -285,10 +285,6 @@ public class BatteryMeterView extends View implements DemoMode,
         super(context, attrs, defStyle);
         mHandler = new Handler();
 
-        mContext = context;
-        mSettingsObserver = new SettingsObserver(new Handler());
-        mSettingsObserver.observe();
-
         final Resources res = context.getResources();
         TypedArray atts = context.obtainStyledAttributes(attrs, R.styleable.BatteryMeterView,
                 defStyle, 0);
