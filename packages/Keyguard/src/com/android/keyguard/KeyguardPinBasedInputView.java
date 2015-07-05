@@ -28,6 +28,7 @@ import android.view.View;
  * A Pin based Keyguard input view
  */
 public abstract class KeyguardPinBasedInputView extends KeyguardAbsKeyInputView
+
         implements View.OnKeyListener, PasswordTextView.OnTextChangedListener {
 
     protected PasswordTextView mPasswordEntry;
@@ -43,6 +44,7 @@ public abstract class KeyguardPinBasedInputView extends KeyguardAbsKeyInputView
     private View mButton7;
     private View mButton8;
     private View mButton9;
+
 
     private boolean mQuickUnlock;
 
